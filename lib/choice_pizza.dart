@@ -21,8 +21,8 @@ class ChoicaPizza extends StatefulWidget {
 class _ChoicaPizzaState extends State<ChoicaPizza> {
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-        home: MultiProvider(
+    return Scaffold(
+        body: MultiProvider(
       providers: [ChangeNotifierProvider<PizzaPice>.value(value: PizzaPice())],
       child: Scaffold(
         body: Stack(children: [

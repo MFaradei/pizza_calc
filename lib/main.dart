@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
-//import 'package:untitled/registerpage.dart';
+import 'package:untitled/style/themedatascrin.dart';
 
-import 'boot_first/firstboot.dart';
-import 'choice_pizza.dart';
 import 'loginpage.dart';
 
 void main() {
@@ -16,8 +14,8 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-        home: Scaffold(
-            body: // Login_page()
-                Fist_boot()));
+        theme: ThemeDataScreen().newMethodd(),
+        home: // Login_page()
+            Login_page());
   }
 }

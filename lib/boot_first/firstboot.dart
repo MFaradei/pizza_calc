@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart';
+/* import 'package:flutter/material.dart';
 import 'package:untitled/loginpage.dart';
 
 class Fist_boot extends StatefulWidget {
@@ -45,3 +45,4 @@ class _Fist_bootState extends State<Fist_boot> with TickerProviderStateMixin {
     );
   }
 }
+ */

@@ -4,8 +4,6 @@ import 'package:untitled/choice_pizza.dart';
 import 'package:untitled/registerpage.dart';
 import 'package:untitled/style/text_style.dart';
 
-GlobalKey globalKey = GlobalKey();
-
 class Login_page extends StatefulWidget {
   const Login_page({Key? key}) : super(key: key);
 
@@ -20,7 +18,6 @@ class _Login_pageState extends State<Login_page> {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-        key: globalKey,
         body: Form(
           child: ListView(
             padding: EdgeInsets.all(40.0),
@@ -49,7 +46,7 @@ class _Login_pageState extends State<Login_page> {
               TextFormField(
                 decoration: InputDecoration(
                   filled: true,
-                  fillColor: Colors.grey.shade200,
+                  fillColor: Theme.of(context).colorScheme.secondary,
                   hintStyle: AppTextStyle.prompt,
                   hintText: '+7',
                   enabledBorder: OutlineInputBorder(
@@ -70,7 +67,7 @@ class _Login_pageState extends State<Login_page> {
                 obscureText: _hidePass,
                 decoration: InputDecoration(
                   filled: true,
-                  fillColor: Colors.grey.shade200,
+                  fillColor: Theme.of(context).colorScheme.primary,
                   hintStyle: AppTextStyle.prompt,
                   hintText: '******',
                   suffixIcon: IconButton(
